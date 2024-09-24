@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio personal</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi portafolio</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mi /</a></li>
+                <li><a href="#portafolio">Portafolio /</a></li>
+                <li><a href="#contact">Contacto /</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre mi</h2>
+        <p> Soy un estudiante de ingenieria, apasionado por la programacion web y el desarrollo de software</p>
+    </section>
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="Gallery"></div>
+        <div class="Proyect"></div>
+        <img src="" alt="Proyect 1">
+        <p> Descripcion del proyecto 1</p>
+        <div class="Proyect 2"></div>
+        <img src="" alt="Proyect 2">
+        <p> Descripcion del proyecto 2</p>
+    </section>
+    <section id="contact">
+        
+        <h2>Contacto</h2>
+        
+        <form action="/sumit" method="post">
+        <h4 for="name">Nombre:</h4>
+        <imput type="text" id="name" name="name" required><br>
+        <h4 for="email">correo electronic:</h4>
+        <imput type="email" id="email" name="email" required><br>
+        <h4 for="message">Mensaje:</h4>
+        <textarea id="message" name="message" required></textarea><br>
+        <imput type="submit" value="enviar"></imput>
+        </form>
+    </section>
+</body>
+</html>

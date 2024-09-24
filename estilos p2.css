@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6px;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10 px;
+}
+nav ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+#about{
+    padding: 20px;
+    background-color: whitesmoke;
+}
+#about h2{
+    margin-top: 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.proyect{
+    width: 300px ;
+    padding:10px ;
+    background-color: whitesmoke;
+    border: 1px solid cornsilk;
+    text-align: center;
+}
+.proyect img{
+    max-width: 100%;
+    height: auto;
+}
+#contact{
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form h4{
+    margin-bottom: 10px;
+}
+form input,form textarea{
+    margin-bottom: 20px ;
+    padding: 10px ;
+    font-size: 16px ;
+}
+form imput[type="submit"]{
+    background-color: black;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
