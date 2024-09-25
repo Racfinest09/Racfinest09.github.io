@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Portafolio personal</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos p2.css">
 </head>
 <body>
     <header>
-        <h1>Mi portafolio</h1>
+        <div class="INICIO"><img src="Recursos/icons8-logo-50.png" alt="Icono">
+            <h1>MI PORTAFOLIO</h1></div>
         <br>
         <nav>
             <ul>
-                <li><a href="#about">Sobre mi /</a></li>
-                <li><a href="#portafolio">Portafolio /</a></li>
-                <li><a href="#contact">Contacto /</a></li>
+                <li><a href="#about"><h2>SOBRE MI /</h2></a></li>
+                <li><a href="#portafolio"><h2>PORTAFOLIO /</h2></a></li>
+                <li><a href="#contact"><h2>CONTACTO /</h2></a></li>
             </ul>
         </nav>
     </header>
     <section id="about">
-        <h2>Sobre mi</h2>
-        <p> Soy un estudiante de ingenieria, apasionado por la programacion web y el desarrollo de software</p>
+        <div class="texto"><h1> Estudiante de Ingenieria, Futuro Desarrollador Web y Diseñador Grafico</h1><p> Soy un estudiante de ingenieria, apasionado por la programacion web y el desarrollo de software</p></div>
+        <br><br>
+        <img class="Yo" src="Recursos/Yo.jpg" alt="Personal">
     </section>
     <section id="portafolio">
+        
         <h2>Portafolio</h2>
         <div class="Gallery"></div>
         <div class="Proyect"></div>
-        <img src="" alt="Proyect 1">
+        <img src="Recursos/3566801.jpg" alt="Proyect 1">
         <p> Descripcion del proyecto 1</p>
         <div class="Proyect 2"></div>
-        <img src="" alt="Proyect 2">
+        <img src="Recursos/2104108.jpg" alt="Proyect 2">
         <p> Descripcion del proyecto 2</p>
     </section>
     <section id="contact">
@@ -38,12 +44,12 @@
         
         <form action="/sumit" method="post">
         <h4 for="name">Nombre:</h4>
-        <imput type="text" id="name" name="name" required><br>
-        <h4 for="email">correo electronic:</h4>
-        <imput type="email" id="email" name="email" required><br>
+        <input type="text" id="name" name="name" required><br>
+        <h4 for="email">correo electronico:</h4>
+        <input type="email" id="email" name="email" required><br>
         <h4 for="message">Mensaje:</h4>
         <textarea id="message" name="message" required></textarea><br>
-        <imput type="submit" value="enviar"></imput>
+        <input type="submit" value="enviar"></imput>
         </form>
     </section>
 </body>
