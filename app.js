@@ -57,7 +57,7 @@ if(x<5){
 }
 else{
     console.log("Chao");
-}*/
+}
 
 let x = 10;
 let y = 20;
@@ -70,6 +70,84 @@ console.log(x>y);
 console.log(x!=y);
 console.log(x==y);
 
+function saludar(nombre, apellido){
+    return "Hola, "+nombre + " "  +apellido;
+}
+let saludo = saludar("Ana","Perez");
+console.log(saludo);//Hola Ana
 
+let sumar = function (x,y){
+    return x + y;
+}
+console.log(sumar(5,8))
 
+let restar = (x,y) => x - y;
+console.log(restar(5,8))
 
+function multiplicar(x,y){
+    return x*y
+}
+console.log(multiplicar(5,8))
+
+function dividir(x,y){
+    return x/y
+}
+console.log (dividir(0,6))
+
+let global = "Soy global";
+function prueba(){
+    let local = "Soy local";
+    console.log(global);
+    console.log(local);//No podemos llamar a una variable que esta dentro de una funcion//
+}
+prueba();
+
+for (let i = 0; i < 5; i++) {
+    console.log("Número: " + i);
+}
+ for (let i = 0; i<=20;i+=1) {
+    console.log("Numeros:"+ i);
+}
+let x = 0;
+for (let i =1;i<=100;i++){//hacer un factorial
+    x += i;
+}
+let promedio = x/101
+console.log("Promedio numeros del 1 al 100:"+x)
+console.log("Promedio numeros del 1 al 100:"+promedio)
+
+for (let p =0;p<=100;p+=2){
+    console.log("Numeros pares: ",p)
+}
+for (let p =0;p<=100;p+=3){
+    console.log("Numeros inpares: ",p)
+}
+let i = 1
+let x = i
+while (i<=12){
+    //console.log("Numero: "+ i);
+    x=x*=i
+    console.log("Numero: "+ x);
+    i++
+}
+
+let numeros = [1,2,3,4,5];
+for(let numero of numeros){
+    console.log(numero);
+}*/
+let estudiantes = [
+    {nombre:"carlos",edad:40},
+    {nombre:"pedro",edad:25},
+    {nombre:"juan",edad:33},
+    {nombre:"julio",edad:48},
+    {nombre:"jose",edad:22},
+];
+for (let estudiante of estudiantes){
+    console.log(estudiante);
+}
+let suma=0;
+for(let estudiante of estudiantes) {
+    suma+=estudiante.edad;
+}
+console.log(estudiantes.length);
+console.log(suma/estudiantes.length);
