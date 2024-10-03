@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=,, initial-scale=1.0">
     <title>Proyecto con javascript</title>
+    <script src="JS/datos.js"></script>
     <script src="JS/app.js"></script>
 </head>
 <body>
-    
+    <div id="mielemento"></div>
+    <script>
+        let elemento = document.getElementById('mielemento')
+        console.log(elemento);
+        elemento.textContent = 'esto es javascript'
+        elemento.style='color:red'
+    </script>
    
 </body>
 </html>

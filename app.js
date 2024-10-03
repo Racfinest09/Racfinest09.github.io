@@ -134,7 +134,7 @@ while (i<=12){
 let numeros = [1,2,3,4,5];
 for(let numero of numeros){
     console.log(numero);
-}*/
+}
 let estudiantes = [
     {nombre:"carlos",edad:40},
     {nombre:"pedro",edad:25},
@@ -151,3 +151,67 @@ for(let estudiante of estudiantes) {
 }
 console.log(estudiantes.length);
 console.log(suma/estudiantes.length);
+
+
+for (let carro of carros){
+    if (carro.mpg>=30){
+    lista.push('carro:',carro.marca,'mpg: ', carro.mpg)
+    }
+}
+
+let dia = 121;
+switch(dia){
+    case 1:
+        console.log('lunes');
+        break;
+    case 2:
+        console.log('martes');
+        break;    
+    case 3:
+        console.log('miercoles');
+        break;    
+    case 4:
+        console.log('jueves');
+        break;    
+    case 5:
+        console.log('viernes');
+        break;    
+    case 6:
+        console.log('sabado');
+        break;    
+    case 7:
+        console.log('domingo');
+        break;    
+    default:
+        console.log('Dia invalido')
+}
+function escmult(valor){
+        for (let j = 1;j<=10;j++){
+            valor*=j;
+            console.log(valor)
+        } 
+            return valor;
+}
+
+function escdiv(resultado){
+   for(let i = 10;i>=1;i--){
+    resultado /= i;
+    console.log(resultado);
+   }
+    return resultado;
+}
+
+valor=prompt('ingrese el valor');
+resultado=escmult(valor);
+valor2=escdiv(resultado);
+if(resultado>valor2){
+    console.log("El valor es incorrecto");
+}
+else if (resultado<valor2){
+    console.log('el valor es incorrecto');
+}
+else if(resultado==valor2) {
+    console.log('El valor es correcto');}*/
+
+    console.log(elemento);
+    
